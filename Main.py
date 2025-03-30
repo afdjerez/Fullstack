@@ -73,8 +73,9 @@ def plot_hires_by_country(df):
     fig.show()
 
 def main():
-    base_dir = os.path.dirname(os.path.abspath(__file__))
-    csv_file_path = os.path.join(base_dir, "input", "candidates.csv")
+    
+    
+    csv_file_path = os.path.abspath("input/candidates.csv")
     print('load data csv')
     df_csv = load_csv(csv_file_path)
     
